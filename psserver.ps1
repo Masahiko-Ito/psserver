@@ -1,8 +1,3 @@
-#
-# ex. psserver.ps1 12345 "^192\.168\.0\.[0-9][0-9]*$"
-#
-#     schtasks /create /s _IP_ /u _DOMAIN_\administrator /p _ADMIN_PASSWORD_ /ru _DOMAIN_\administrator /rp _ADMIN_PASSWORD_ /sc onstart /tn "_TITLE_" /tr "'powershell' '-NoProfile' '-ExecutionPolicy' 'Unrestricted' '-File' 'C:\temp\psserver.ps1' '12345' '^127\.0\.0\.1$|^192\.168\.0\.[0-9][0-9]*$'" /rl HIGHEST /f
-#
 #------------------------------------------------------------
 # Argument
 #------------------------------------------------------------

@@ -18,3 +18,9 @@ Usage: psclient.ps1 PSSERVER_IP PORT "COMMAND"
   PORT        port number which psserver waiting
   "COMMAND"   command which can be run from PowerShell
 ```
+
+## misc
+```
+schtasks /create /s PSSERVER_IP /u administrator /p _ADMIN_PASSWORD_ /ru administrator /rp _ADMIN_PASSWORD_ /sc onstart /tn "_TITLE_" /tr "'powershell' '-NoProfile' '-ExecutionPolicy' 'Unrestricted' '-File' 'C:\temp\psserver.ps1' 'PORT' '^ALLOWED_IP$'" /rl HIGHEST /f
+
+
