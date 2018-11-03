@@ -13,7 +13,7 @@ $allowip = $args[1]
 #
 Function readLine($rd){
         try {
-                $line = $reader.readLine()
+                $line = $rd.readLine()
         }catch{
                 $line = $null
         }
